@@ -1,25 +1,14 @@
 import React from 'react';
 import { Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
+import {  AppstoreOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
-const { SubMenu } = Menu;
 
 const NavBar = () => {
 
-    const state = {
-        current: 'mail',
-    };
-
-    const handleHeadlines = e => {
-        console.log('click');
-    };
-
-
-
     return (
         <div>
-            <Menu selectedKeys={[state.current]} mode="horizontal">
+            <Menu mode="horizontal" >
 
                 <Menu.Item key="mail" icon={<AppstoreOutlined />}>
                     <Link to='/'>
@@ -27,7 +16,7 @@ const NavBar = () => {
                     </Link>
                 </Menu.Item>
 
-                <Menu.Item key="app" onClick={handleHeadlines} icon={<AppstoreOutlined />}>
+                <Menu.Item key="app" icon={<AppstoreOutlined />}>
                     <Link to='/everything'>
                         Everything
                     </Link>
