@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu } from 'antd';
-import {  AppstoreOutlined } from '@ant-design/icons';
+import { BorderlessTableOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
 
@@ -10,19 +10,19 @@ const NavBar = () => {
         <div>
             <Menu mode="horizontal" >
 
-                <Menu.Item key="mail" icon={<AppstoreOutlined />}>
+                <Menu.Item key="mail" icon={<BorderlessTableOutlined />}>
                     <Link to='/'>
                         Top headlines
                     </Link>
                 </Menu.Item>
 
-                <Menu.Item key="app" icon={<AppstoreOutlined />}>
+                <Menu.Item key="app" icon={<BorderlessTableOutlined />}>
                     <Link to='/everything'>
                         Everything
                     </Link>
                 </Menu.Item>
 
-                <Menu.Item key="string" icon={<AppstoreOutlined />}>
+                <Menu.Item key="string" icon={<BorderlessTableOutlined />}>
                     <Link to='/source'>
                         Source
                     </Link>

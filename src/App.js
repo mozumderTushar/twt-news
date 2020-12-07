@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import NavBar from './components/Home/NavBar/NavBar';
 import Everything from './components/Home/Everything/Everything';
@@ -14,6 +13,7 @@ import { useEffect, useState } from 'react';
 import Pagination from './components/Pagination/Pagination';
 
 function App() {
+
   const [headLine, setHeadLine] = useState([])
   const [everything, setEverything] = useState([])
   const [source, setSource] = useState([]);
